@@ -345,6 +345,10 @@ box-shadow: 0 10px 0 0 #af9ab2e1;
     position: relative;
     top: 6rem;
     background: var(--color-bg);
+    box-shadow: inset -7px -7px 11px #ffffff2d, inset 7px 7px 9px rgba(94, 104, 121, .288);
+    border-radius: 20px;
+    right: 5px;
+    left: 5px;
     overflow: hidden;
     height: 70vh;
     margin-bottom: 10rem;
@@ -358,7 +362,9 @@ box-shadow: 0 10px 0 0 #af9ab2e1;
     gap: 5rem;
     height: 100%;
 }
-
+.header-left {
+    padding: 2rem;
+}
 .header-left p {
     margin: 1rem 0 2.4rem ;
 }
@@ -367,14 +373,19 @@ box-shadow: 0 10px 0 0 #af9ab2e1;
 /* =======CATEGORIES======== */
 
 .categories {
-    /* position: relative;
-    display: grid; */
-    background-color: #14213d75;
+    position: absolute;
+    background: var(--color-bg);
+    color: #000000;
     border: 2px solid transparent;
     margin-top: 10px;
     border-radius: 20px;
+    box-shadow: inset -7px -7px 11px #ffffff73, inset 7px 7px 9px rgba(94, 104, 121, .288);
+    right: 10px;
+    left: 10px;
+    
 
 }
+
  .categories h1 {
     line-height: 1;
     margin-bottom: 1rems;
@@ -388,21 +399,61 @@ box-shadow: 0 10px 0 0 #af9ab2e1;
     grid-template-areas:
     "categories-left categories-right";
  }
+ .categories-left {
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: -5px -5px 9px #ffffff2d, 5px 5px 7px rgba(94, 104, 121, .288);
+ }
 
  .categories-left p {
     margin: 1rem 0 3rem;
  }
+
+ .btn-left {
+    /* position: absolute; */
+    padding-left: 10px;
+ }
  
  .categories-right {
+    grid-column: categories-right;
     display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0em 0px;
-    grid-template-areas:
-      "A B"
-      "C D";
-  
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  grid-template-areas:
+    "A B"
+    "C D";
+   
  }
+
+
+ .right-a {
+    grid-column: A;
+ }
+
+ .right-b {
+    grid-column: B;
+ }
+
+ .right-c {
+    grid-column: C;
+ }
+
+ .right-d {
+    grid-column: D;
+ }
+
+ .category {
+    background: #949597;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: -5px -5px 9px #ffffff2d, 5px 5px 7px rgba(94, 104, 121, .288);
+    transition: var(--transition);
+ }
+
+
+ 
 
 
 
