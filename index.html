@@ -24,7 +24,7 @@
     />
   </head>
   <body>
-    <nav>
+    <nav class=".window-scroll">
       <div class="container nav-container">
         <a href="index.html"
           ><img
@@ -129,15 +129,22 @@
     <!-- ----------------END OF HEADER----------- -->
     <section class="categories">
       <div class="container categories-container">
-        <div class="categories-left">
-          <h1>Categories</h1>
+        <div class="categories-left conta">
+          <div class="circle">
+            <img
+              class="cat-icon"
+              src="./images/category-icon-png-5.jpg"
+              alt="category icon"
+            />
+          </div>
+          <h1 class="infor">Categories</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
             repellendus temporibus sunt, voluptatibus eius, recusandae corporis
             quae fuga doloribus praesentium ab, sit officia obcaecati
             consequuntur mollitia modi vitae totam minima!
           </p>
-          <a href="#" class="btn btn-primary">Learn more</a>
+          <a href="#" class="btn btn-primary btn-left">Learn more</a>
         </div>
         <div class="categories-right">
           <div class="right-a">
@@ -195,5 +202,7 @@
 
     <script src="/app.js"></script>
     <script src="/nav.js"></script>
+    <script src="/toggle.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
